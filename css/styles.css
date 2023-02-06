@@ -36,6 +36,7 @@ div {
 h1 {
   color: var(--primary-dark);
   font-family: 'Raleway-semibold', sans-serif;
+  font-weight: 600;
   font-size: 2.5rem;
   margin: 0;
 }
@@ -51,6 +52,11 @@ h2 {
 h3 {
   color: var(--primary-dark);
   font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  color: var(--default-text);
+  font-family: 'Raleway-bold', sans-serif;
 }
 
 hr {
@@ -79,9 +85,14 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 60px 0 80px;
+}
+
 /*######################################################*/
 
 /* CLASSES */
+
 .bottom-container {
   background-color: var(--primary-dark);
 }
@@ -132,7 +143,7 @@ p {
   padding: 20px 0;
 }
 
-.flex {
+.flex-col {
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -142,12 +153,23 @@ p {
 .focus-row {
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-/* .focus-block {
-  width: 200px;
-  height: 200px;
-} */
+.focus-icon {
+  left: 14px;
+  position: absolute;
+  top: 12px;
+  z-index: 1;
+}
+
+.focus-block {
+  padding: 8px;
+}
+
+.focus-label {
+  margin-top: 1rem;
+}
 
 .footer-link {
   color: var(--accent-light);
@@ -159,11 +181,19 @@ p {
   color: var(--accent-dark);
 }
 
+.header-bar {
+  background: var(--primary-dark);
+  height: 4px;
+  margin: 25px auto 75px;
+  width: 70px;
+}
+
 .hexagon {
-  background-color: #04c2c9;
+  background-color: var(--accent-dark);
   display: inline-block;
   height: 100%;
   width: calc(100% * 0.57735);
+  color: var(--accent-light);
 }
 
 .hexagon:before {
@@ -188,15 +218,16 @@ p {
   width: inherit;
 }
 
-.hexagon svg {
-  position: absolute;
-  z-index: 1;
+.hex-wrap {
+  display: inline-block;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 100px;
 }
 
 .hex-wrap {
-  display: inline-block;
-  position: relative;
-  text-align: center;
 }
 
 .highlight {
@@ -205,19 +236,18 @@ p {
 }
 
 .intro {
-  width: 30%;
-  margin: auto;
+  margin: 0 auto 30px;
+  padding: 0 12px;
+  width: 70%;
 }
 
 .links {
   display: flex;
-  justify-content: left;
   height: 0;
+  justify-content: left;
   max-width: 1200px;
   overflow: hidden;
   position: absolute;
-  top: 53px;
-  transition: height 0.3s ease-out;
   width: 100%;
 }
 
@@ -236,11 +266,46 @@ p {
   top: 0;
 }
 
+.skill-bar {
+  background-color: var(--accent-light);
+  display: flex;
+  height: 2rem;
+  margin-bottom: 15px;
+  /* border-radius: 5px; */
+}
+
+.skill-bars {
+  width: 50%;
+  align-self: flex-end;
+}
+
+.skill-label {
+  background-color: var(--primary-dark);
+  color: var(--accent-light);
+  font-family: "Raleway";
+  font-weight: 700;
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.skill-wrap {
+  display: flex;
+}
+
+.skill-value {
+  font-family: "Raleway";
+}
+
+.view-work-link {
+  width: 40%;
+  margin: 20px auto;
+}
+
 /*######################################################*/
 
 /* IDs */
 #about {
-  display: block;
+  
 }
 
 #contact {
@@ -285,14 +350,6 @@ p {
   }
   
   section {
-    line-height: 18pt;
     padding: 100px 0 130px;
   }
-
-  /* CLASSES */
-  .hex-wrap {
-    width: 100px;
-    height: 100px;
-  }
-
 }

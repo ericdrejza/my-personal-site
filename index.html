@@ -14,20 +14,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!-- INTRO -->
-    <section id="home" class="flex">
-      <h2>
+    <section id="home" class="flex-col">
+      <h2 class="intro">
         Hello, I'm
-        <span class="highlight">Eric Drejza</span>.
+        <span class="highlight">Eric Drejza</span>,
         <br>
-        I'm a full-stack web developer.
+        a full-stack engineer.
       </h2>
 
-      <nav class="flex nav">
+      <a class="nav-link view-work-link" href="#about">View my work<i class="iconify ms-3" data-icon="mdi-arrow-right"></i></a>
+
+      <nav class="flex-col nav">
         <div class="links">
           <li class="nav-item" dest="home">
             <a class="nav-link" href="#home">home</a>
@@ -48,41 +50,121 @@
     
     <!-- ABOUT -->
     <section id="about">
-      <div class="container flex">
+      <div class="container flex-col">
         <h1 class="about-header">ABOUT</h1>
-        <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s"
-          style="animation-delay: 0.5s;"></div>
-        <div class="container">
-          
+        <div class="header-bar"></div>
+        
+        <!-- List of my focuses -->
+        <div class="row p-3 focus-row">
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-account" width="72" ></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>User-focused</strong></h4>
+            </div>
+            <div>
+              <p>
+                Design to make the UX/UI intuitive and enjoyable for users
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-palette-advanced" width="72"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>Creative Designs</strong></h4>
+            </div>
+            <div>
+              <p>
+                Prefers getting creative with designs while using known practices that work
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-database" width="72"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>Data Conscious</strong></h4>
+            </div>
+            <div>
+              <p>
+                Creates systems to protect data and deliver accurate responses to authorized requests
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-graph" width="72"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>Flexible</strong></h4>
+            </div>
+            <div>
+              <p>
+                Uses core concepts to quickly learn new languages and technologies as needed
+              </p>
+            </div>
+          </div>
+
         </div>
+
+        <div class="skill-bars flex-col">
+          <div class="flex">
+            <span class="skill-label">HTML</span>
+            <div class="skill-bar">
+              <div class="" style="width: 60%">
+              <span class="skill-value">60%</span></div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
       <h1>PROJECTS</h1>
+      <div class="header-bar"></div>
       
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
+      <h1>CONTACT</h1>
+      <div class="header-bar"></div>
       <h2>Get In Touch</h2>
-      <h3>If you want to elevate your web application.</h3>
       <p class="contact-message">
         Want to upgrade that website of yours?
         <br>
         Be sure to reach out!</p>
-      <a class="btn" href="mailto:eric.drejza@gmail.com" target="_blank">CONTACT ME</a>
+      <a class="contact-btn" href="mailto:eric.drejza@gmail.com" target="_blank">CONTACT ME</a>
     </section>    
     
     <!-- FOOTER -->
     <div class="bottom-container">
-      <a class="footer-link" href="http://www.linkedin.com/in/eric-drejza-560142175">LinkedIn</a>
-      <a class="footer-link" href="https://github.com/ericdrejza">Github</a>
+      <a class="footer-link" href="http://www.linkedin.com/in/eric-drejza-560142175"><i class="iconify" data-icon="mdi-linkedin" width="45"></i></a>
+      <a class="footer-link" href="https://github.com/ericdrejza"><i class="iconify" data-icon="mdi-github" width="45"></i></a>
       <p>© Eric Drejza <span class="copyright-year"></span></p>
     </div>
 
     <div id="top-of-site-anchor"></div>
+    
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script src="scripts/script.js"></script>
   </body>
 </html>
