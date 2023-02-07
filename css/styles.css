@@ -190,6 +190,7 @@ section {
 
 .hexagon {
   background-color: var(--accent-dark);
+  border-bottom: 3px double var(--default-text);
   display: inline-block;
   height: 100%;
   width: calc(100% * 0.57735);
@@ -198,6 +199,7 @@ section {
 
 .hexagon:before {
   background-color: inherit;
+  border-bottom: inherit;
   content: "";
   height: inherit;
   position: absolute;
@@ -209,6 +211,7 @@ section {
 
 .hexagon:after {
   background-color: inherit;
+  border-bottom: inherit;
   content: "";
   height: inherit;
   position: absolute;
@@ -225,9 +228,6 @@ section {
   position: relative;
   text-align: center;
   width: 100px;
-}
-
-.hex-wrap {
 }
 
 .highlight {
@@ -267,33 +267,50 @@ section {
 }
 
 .skill-bar {
+  align-items: center;
   background-color: var(--accent-light);
+  /* border-radius: 0 8px 8px 0; */
   display: flex;
-  height: 2rem;
+  /* height: 100%; */
+  height: 30px;
+  justify-content: space-between;
   margin-bottom: 15px;
-  /* border-radius: 5px; */
+  width: 100%;
 }
 
 .skill-bars {
-  width: 50%;
   align-self: flex-end;
+  margin-top: 32px;
+  width: 50%;
+}
+
+.skill-highlight {
+  align-items: center;
+  background: var(--accent-dark);
+  border-radius: 0px;
+  color: var(--accent-light);
+  display: flex;
+  height: 100%;
 }
 
 .skill-label {
-  background-color: var(--primary-dark);
+  border-radius: 5px 0 0 5px;
+  align-items: center;
+  background-color: var(--accent-dark-highlight);
   color: var(--accent-light);
+  display: flex;
   font-family: "Raleway";
   font-weight: 700;
-  padding: 4px 12px;
-  text-align: center;
-}
-
-.skill-wrap {
-  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: 4px 0px;
+  width: 110px;
 }
 
 .skill-value {
   font-family: "Raleway";
+  font-size: 1.2rem;
+  padding-right: 15px;
 }
 
 .view-work-link {
@@ -324,6 +341,7 @@ section {
 
 #projects {
   background-color: var(--accent-light);
+  /* background-color: #eee; */
 }
 
 #projects h1 {
