@@ -17,7 +17,7 @@ if (
 // Listeners to close nav menu on click
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbar')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false})
 navLinks.forEach((l) => {
   l.addEventListener('click', () => { bsCollapse.toggle() })
 });
