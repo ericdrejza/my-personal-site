@@ -1,3 +1,4 @@
+// Place nav bar at the top of the screen after scrolling a certain distance
 if (
   "IntersectionObserver" in window &&
   "IntersectionObserverEntry" in window &&
@@ -12,3 +13,11 @@ if (
   });
   observer.observe(document.querySelector("#top-of-site-anchor"));
 }
+
+// Listeners to close nav menu on click
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbar')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+  l.addEventListener('click', () => { bsCollapse.toggle() })
+});

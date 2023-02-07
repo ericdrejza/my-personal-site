@@ -302,17 +302,22 @@ section {
 .intro {
   margin: 0 auto 30px;
   padding: 0 12px;
-  width: 70%;
 }
 
 .links {
   display: flex;
-  height: 0;
-  justify-content: left;
+  justify-content: right;
   max-width: 1200px;
-  overflow: hidden;
-  position: absolute;
   width: 100%;
+}
+
+.nav-menu-btn {
+  margin-right: 20px;
+  color: var(--accent-light);
+}
+
+.nav-menu-list {
+  background-color: var(--primary-darker);
 }
 
 .nav-link {
