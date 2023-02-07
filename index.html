@@ -2,59 +2,286 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eric Drejza</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon-white-navy_bg.ico">
     
     <!-- Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="top-container">
-      <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-      <h1>I'm Eric</h1>
-      <h2>a programmer.</h2>
-      <img class="mountain" src="images/mountain.png" alt="mountain-img">
-    </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img class="profile-img" src="images/Career Fair Pic 2.jpg" alt="profile-img">
-        <h2>Hello.</h2>
-        <p class="intro">I am a full stack web developer.  I've created a number of web applications.</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="computer-img" src="images/computer.png" alt="computer-img">
-          <h3>DevOps</h3>
-          <p>I have worked two years in DevOps and am looking to pursue a new path down web development.</p>
+    <!-- INTRO -->
+    <section id="home" class="flex-col">
+      <h2 class="intro">
+        Hello, I'm
+        <span class="highlight semibold">Eric Drejza</span>,
+        <br>
+        a full-stack engineer.
+      </h2>
+
+      <a class="nav-link view-work-link" href="#about">View my work<i class="iconify ms-3" data-icon="mdi-arrow-right"></i></a>
+
+      <nav class="flex-col nav">
+        <div class="links">
+          <li class="nav-item" dest="home">
+            <a class="nav-link" href="#home">home</a>
+          </li>
+          <li class="nav-item" dest="about">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item" dest="projects">
+            <a class="nav-link" href="#projects">projects</a>
+          </li>
+          <li class="nav-item" dest="contact">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
         </div>
-        <div class="skill-row">
-          <img class="chillies-img" src="images/chillies.png" alt="chillies-img">
-          <h3>Object Oriented Design</h3>
-          <p>I am very comfortable with object oriented concepts and principles.</p>
+        <i class="mdi mdi-menu"></i>
+      </nav>
+    </section>
+    
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container flex-col">
+        <h1 class="about-header">ABOUT</h1>
+        <div class="header-bar"></div>
+        
+        <!-- List of my focuses -->
+        <div class="row p-3 focus-row">
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-account" width="72" ></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>User-focused</strong></h4>
+            </div>
+            <div>
+              <p>
+                Designs to make the UX/UI intuitive and enjoyable for users
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-palette-advanced" width="72"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>Creative Designs</strong></h4>
+            </div>
+            <div>
+              <p>
+                Prefers getting creative with designs while using known practices that work
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-database" width="72"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>Data Conscious</strong></h4>
+            </div>
+            <div>
+              <p>
+                Creates systems to protect data and deliver accurate responses to authorized requests
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-6 col-lg-3 flex-col focus-block">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="iconify focus-icon" data-icon="mdi-graph" width="72"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="focus-label"><strong>Flexible</strong></h4>
+            </div>
+            <div>
+              <p>
+                Uses an understanding of core concepts to quickly learn new skills as needed
+              </p>
+            </div>
+          </div>
+
         </div>
+        <!-- END FOCUSES -->
+        
+
+        <div class="row bio-skills-wrapper">
+
+          <!-- START BIO -->
+          <div class="col col-md-6 bio">
+
+            <div class="bio-img">
+              <div class="bio-img-hexagon">
+                <div class="bio-img-hexagon-in1">
+                  <div class="bio-img-hexagon-in2">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="bio-label"><strong>Who am I?</strong></h4>
+              
+            <p class="bio-description">
+              I'm a software engineer in Philadelphia, PA.
+              <br />
+              I have a passion for dreaming up and developing interactive applications
+              that are fun and intuitive.
+              <br />
+              <a class="highlight" href="#contact">Let's bring your idea to life.</a>
+            </p>
+          </div>
+          <!-- END BIO -->
+
+          <!-- START SKILL BARS -->
+          <div class="col col-md-6 skill-bars flex-col">
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 70%">
+                <span class="skill-label">Bootstrap</span>
+              </div>
+              <span class="skill-value">70%</span>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 70%">
+                <span class="skill-label">CSS</span>
+              </div>
+              <span class="skill-value">70%</span>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 60%">
+                <span class="skill-label">Databases</span>
+              </div>
+              <span class="skill-value">60%</span>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 85%">
+                <span class="skill-label">Docker</span>
+              </div>
+              <span class="skill-value">85%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 90%">
+                <span class="skill-label">Git</span>
+              </div>
+              <span class="skill-value">90%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 80%">
+                <span class="skill-label">HTML</span>
+              </div>
+              <span class="skill-value">80%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 75%">
+                <span class="skill-label">JavaScript</span>
+              </div>
+              <span class="skill-value">75%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 65%">
+                <span class="skill-label">Node.js</span>
+              </div>
+              <span class="skill-value">65%</span>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 90%">
+                <span class="skill-label">Python</span>
+              </div>
+              <span class="skill-value">90%</span>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-highlight" style="width: 65%">
+                <span class="skill-label">React</span>
+              </div>
+              <span class="skill-value">65%</span>
+            </div>
+            
+          </div>
+          <!-- END SKILL BARS -->
+
+        </div>
+
       </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>If you want to elevate your web application.</h3>
-        <p class="contact-message">Want to upgrade that website of yours?  Be sure to reach out!</p>
-        <a class="btn" href="mailto:eric.drejza@gmail.com">CONTACT ME</a>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h1>PROJECTS</h1>
+      <div class="header-bar"></div>
+
+      <div class="container">
+        <div class="row project-row">
+          <div class="col col-lg-4 flex-col project-card-wrap">
+            <div class="card flex-col project-card">
+              <div class="project-card-info">
+                <h2 class="project-card-title"><strong>The Story Engine</strong></h2>
+                <h4 class="highlight">React.js</h4>
+                <p class="project-description">
+                  The Story Engine is my digitalization of an existing physical product of the same name
+                  that I chose to create to practice using the React framework.
+                </p>
+                <a class="project-link" href="http://the-story-engine.ericdrejza.com">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
-    </div>
+      
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h1>CONTACT</h1>
+      <div class="header-bar"></div>
+      <h2>Get In Touch</h2>
+      <p class="contact-message">
+        Want me to upgrade that website of yours or join your team?
+        <br>
+        Be sure to reach out!</p>
+      <a class="contact-btn" href="mailto:eric.drejza@gmail.com" target="_blank">CONTACT ME</a>
+    </section>    
     
-    
+    <!-- FOOTER -->
     <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Github</a>
-      <p>© Eric Drejza.</p>
+      <a class="footer-link" href="http://www.linkedin.com/in/eric-drejza-560142175"><i class="iconify" data-icon="mdi-linkedin" width="45"></i></a>
+      <a class="footer-link" href="https://github.com/ericdrejza"><i class="iconify" data-icon="mdi-github" width="45"></i></a>
+      <p class="copyright">© Eric Drejza 2022</p>
     </div>
+
+    <div id="top-of-site-anchor"></div>
+    
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
+
+<!-- TODO: Try to implement scrollspy in conjunction with the navbar links
+      https://getbootstrap.com/docs/5.3/components/scrollspy/ -->
