@@ -10,14 +10,9 @@
 
 /* TAGS */
 a {
-  color: var(--primary-light);
   font-family: 'Montserrat' sans-serif;
   margin: 10px 20px;
   text-decoration: none;
-}
-
-a:hover {
-  color: #EAF6F6;
 }
 
 body {
@@ -92,6 +87,68 @@ section {
 /*######################################################*/
 
 /* CLASSES */
+
+.bio {
+  padding: 0 100px;
+}
+
+.bio-description {
+  
+}
+
+.bio-img {
+  display: flex;
+  justify-content: center;
+}
+
+.bio-img-hexagon {
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  visibility: hidden;
+  width: 400px;
+}
+
+.bio-img-hexagon-in1 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.bio-img-hexagon-in2 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-dark);
+  background-image: url("../images/Career Fair Pic 2.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 180px;
+  visibility: visible;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.bio-label {
+  margin: 24px 0
+}
+
+.bio-skills-wrapper {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
 .bottom-container {
   background-color: var(--primary-dark);
@@ -190,7 +247,7 @@ section {
 
 .hexagon {
   background-color: var(--accent-dark);
-  border-bottom: 3px double var(--default-text);
+  border-bottom: 3px double var(--accent-light);
   display: inline-block;
   height: 100%;
   width: calc(100% * 0.57735);
@@ -199,7 +256,7 @@ section {
 
 .hexagon:before {
   background-color: inherit;
-  border-bottom: inherit;
+  border: inherit;
   content: "";
   height: inherit;
   position: absolute;
@@ -211,7 +268,7 @@ section {
 
 .hexagon:after {
   background-color: inherit;
-  border-bottom: inherit;
+  border: inherit;
   content: "";
   height: inherit;
   position: absolute;
@@ -231,7 +288,6 @@ section {
 }
 
 .highlight {
-  font-family: 'Raleway-semibold', sans-serif;
   color: var(--accent-dark);
 }
 
@@ -266,6 +322,10 @@ section {
   top: 0;
 }
 
+.semibold {
+  font-family: 'Raleway-semibold', sans-serif;
+}
+
 .skill-bar {
   align-items: center;
   background-color: var(--accent-light);
@@ -278,7 +338,6 @@ section {
 
 .skill-bars {
   align-self: flex-end;
-  margin-top: 32px;
   width: 50%;
 }
 
@@ -295,6 +354,7 @@ section {
   border-radius: 5px 0 0 5px;
   align-items: center;
   background-color: var(--accent-dark-highlight);
+  border-right: 1px solid var(--accent-light);
   color: var(--accent-light);
   display: flex;
   font-family: "Raleway";
@@ -308,7 +368,7 @@ section {
 .skill-value {
   font-family: "Raleway";
   font-size: 1.2rem;
-  padding-right: 15px;
+  padding: 0 15px 0 5px;
 }
 
 .view-work-link {
@@ -319,13 +379,6 @@ section {
 /*######################################################*/
 
 /* IDs */
-#about {
-  
-}
-
-#contact {
-
-}
 
 #home {
   background-color: var(--primary-dark);
