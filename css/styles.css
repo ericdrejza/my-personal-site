@@ -305,6 +305,7 @@ section {
 }
 
 .links {
+  border: 0;
   display: flex;
   justify-content: right;
   max-width: 1200px;
